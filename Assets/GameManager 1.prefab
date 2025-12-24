@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7337865374385151510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5334982293951341025}
+  - component: {fileID: 3332857600884123300}
+  m_Layer: 0
+  m_Name: GameManager 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5334982293951341025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7337865374385151510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 509.4406, y: 256.98538, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3332857600884123300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7337865374385151510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56376b0a242532e49b6066285fec4833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  tumSenaryo:
+  - bolumAdi: "Ba\u015Flang\u0131\xE7"
+    chapterNo: 1
+    fightNo: 1
+    hikayeMetni: "Karakter aya\u011Fa kalkmaya \xE7al\u0131\u015F\u0131r ancak ba\u015F\u0131
+      d\xF6ner. Kim oldu\u011Funa dair en ufak bir fikri yoktur. Tam bu s\u0131rada,
+      g\xF6lgelerin aras\u0131ndan ya\u015Fl\u0131, \xFCst\xFC ba\u015F\u0131 y\u0131pranm\u0131\u015F
+      ama te\xE7hizatl\u0131 bir adam \xE7\u0131kar ve karakterin a\u011Fz\u0131n\u0131
+      eliyle kapat\u0131p onu bir s\xFCtunun arkas\u0131na \xE7eker."
+    diyaloglar:
+    - konusanIsim: Elias
+      cumle: "\"\u015E\u015F\u015Ft... Nefes bile alma. Onlar, korkunun kokusunu
+        alabiliyor.\""
+      sagTarafKonusuyor: 1
+      karakterResmi: {fileID: -1692924951201596939, guid: b3e5d6fc5f85d474fb7667bf591e9131, type: 3}
+    - konusanIsim: Ana Karakter
+      cumle: "\"Sen kimsin? Buras\u0131 neresi? Ben... hi\xE7bir \u015Fey hat\u0131rlam\u0131yorum.\""
+      sagTarafKonusuyor: 0
+      karakterResmi: {fileID: -3063201976715654419, guid: 47a99715de6471f43a366339ca3d8964, type: 3}
+    - konusanIsim: Elias
+      cumle: "\"Hat\u0131rlamaman senin i\xE7in bir l\xFCtuf, evlat. Burada an\u0131lar
+        y\xFCkt\xFCr. Zihnin ne kadar doluysa, o '\u015Feyler' seni o kadar \xE7abuk
+        bulur.\""
+      sagTarafKonusuyor: 1
+      karakterResmi: {fileID: -1692924951201596939, guid: b3e5d6fc5f85d474fb7667bf591e9131, type: 3}
+  partyMembers: []
+  activeMemberIndex: 0
+  isLowCpuMode: 0
+  playerGold: 500
+  playerInventory: []
+  tumEsyaResimleri:
+  - esyaIsmi: "Tahta K\u0131l\u0131\xE7"
+    esyaResmi: {fileID: 5624988362446944380, guid: 03b6bfa7c4f0828449ed532ab242abe7, type: 3}
+  - esyaIsmi: "Demir K\u0131l\u0131\xE7"
+    esyaResmi: {fileID: 3968931439472063756, guid: e713c93edf4e451418ac00a3544d04ff, type: 3}
+  - esyaIsmi: "Alt\u0131n K\u0131l\u0131\xE7"
+    esyaResmi: {fileID: 5557580574306748709, guid: ba7c4eaec125a89458903c27699c1784, type: 3}
+  - esyaIsmi: "Efsanevi K\u0131l\u0131\xE7"
+    esyaResmi: {fileID: 6060688741046563079, guid: 48cb136ca379c1945b209f7cfec69f55, type: 3}
+  - esyaIsmi: "Deri Z\u0131rh"
+    esyaResmi: {fileID: 3088541613197650523, guid: 01f5b1dd267bfc844a13e9b87375bd32, type: 3}
+  - esyaIsmi: "Demir Z\u0131rh"
+    esyaResmi: {fileID: 5556341641646306648, guid: 89f5f16541c788f4988151ec3019275b, type: 3}
+  - esyaIsmi: "\u015E\xF6valye Mi\u011Fferi"
+    esyaResmi: {fileID: 3218721836051569067, guid: d856211a5cf135248b548c35b862f13a, type: 3}
+  - esyaIsmi: Tahta Kalkan
+    esyaResmi: {fileID: 5110971536291881076, guid: ca20b32bf8e9e934fa5db8a1ae45bbd5, type: 3}
+  - esyaIsmi: "Yakut Y\xFCz\xFCk"
+    esyaResmi: {fileID: -1666933443714990831, guid: 975021a0d6581a2458557b47e2d0fe0b, type: 3}
+  - esyaIsmi: "K\xFC\xE7\xFCk \u0130ksir"
+    esyaResmi: {fileID: 4704929228616946384, guid: 10d8d92702f6bca4283036359b915735, type: 3}
+  - esyaIsmi: "Gizemli \u0130ksir"
+    esyaResmi: {fileID: -227398099809153907, guid: 7f5ca9c9942cc7a418f5af97c9ef911e, type: 3}
+  gameSkills:
+  - skillName: "H\u0131zl\u0131 Vuru\u015F"
+    skillIcon: {fileID: 0}
+    damage: 15
+    manaCost: 5
+    description: "\"S\u0131radan Bir Sald\u0131r\u0131.\""
+    isUnlocked: 1
+    requiredLevel: 1
+    pointCost: 0
+  - skillName: Alev Topu
+    skillIcon: {fileID: 0}
+    damage: 40
+    manaCost: 20
+    description: "\"Mana'n\u0131n l\xFCft\xFCyla alevin y\u0131k\u0131c\u0131 g\xFCc\xFCyle
+      birle\u015Ftir ve d\xFC\u015Fmanlar\u0131n\u0131 yok et.\""
+    isUnlocked: 0
+    requiredLevel: 2
+    pointCost: 0
+  - skillName: "Kutsal I\u015F\u0131k"
+    skillIcon: {fileID: 0}
+    damage: -30
+    manaCost: 25
+    description: "\"Kutsal I\u015F\u0131\u011F\u0131 Kullanarak kendini ya da arkada\u015Flar\u0131n\u0131
+      iyile\u015Ftir.\""
+    isUnlocked: 0
+    requiredLevel: 3
+    pointCost: 0
+  - skillName: "G\xF6k \xC7arpmas\u0131"
+    skillIcon: {fileID: 0}
+    damage: 80
+    manaCost: 50
+    description: "\"\u015Eim\u015Fe\u011Fin saf enerjisiyle d\xFC\u015Fman\u0131
+      a\u015F\u0131r\u0131 y\xFCkle!\""
+    isUnlocked: 0
+    requiredLevel: 5
+    pointCost: 0
+  skillPoints: 3
+  isBossFight: 0
+  currentChapter: 1
+  currentFight: 1
+  totalFightsPerChapter: 6
