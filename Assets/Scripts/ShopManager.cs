@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement; // Sahne değişimi için şart
+using UnityEngine.SceneManagement;
 
 public class ShopManager : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class ShopManager : MonoBehaviour
     public Transform playerGrid;
     public GameObject slotPrefab;
     public TextMeshProUGUI goldText;
-    public Button backButton; // <-- Inspector'da bunu bağlamayı unutma!
+    public Button backButton;
 
     [Header("DETAY PANELİ")]
     public GameObject infoPanel;
@@ -25,67 +25,37 @@ public class ShopManager : MonoBehaviour
     private GameManager gm;
     private string selectedItem;
     private bool isBuyingMode;
-
-    private string[] shopItems = {
-        "Demir Kılıç", "Kraliyet Zırhı", "Altın Miğfer", "Gümüş Miğfer",
-        "Yakut Yüzük", "Safir Yüzük", "Zümrüt Yüzük",
-        "Şövalye Kalkanı", "Savaş Kalkanı", "Efsanevi Kılıç"
-    };
+    private int currentTransactionPrice; // İşlem anındaki fiyat
 
     void Start()
     {
         gm = GameManager.Instance;
-
-        // 1. GERİ BUTONU AYARI (StoryScene'e Götürür) 🔙
-        if (backButton != null)
-        {
-            backButton.onClick.RemoveAllListeners(); // Önceki hatalı bağlantıları temizle
-            backButton.onClick.AddListener(() => {
-                Debug.Log("Hikayeye dönülüyor...");
-                SceneManager.LoadScene("StoryScene"); // <-- HEDEF SAHNE
-            });
-        }
-        else
-        {
-            Debug.LogError("UYARI: Back Button (Geri Tuşu) Inspector'da boş! Lütfen sürükle.");
-        }
-
-        // GameManager yoksa hata vermesin, dursun (Test güvenliği)
+        if (backButton != null) { backButton.onClick.RemoveAllListeners(); backButton.onClick.AddListener(() => { SceneManager.LoadScene("StoryScene"); }); }
         if (gm == null) return;
-
         if (actionButton) actionButton.onClick.AddListener(IslemYap);
         if (infoPanel) infoPanel.SetActive(false);
-
         RefreshUI();
     }
 
     void RefreshUI()
     {
         if (gm == null) return;
-
-        // Altın Güncelle
         if (goldText) goldText.text = $"{gm.playerGold} Altın";
 
-        // Sol Taraf (SATICI)
+        // DÜKKAN LİSTESİ
         Temizle(shopGrid);
-        foreach (string item in shopItems)
+        foreach (var data in gm.tumEsyalarDatabase)
         {
-            // Prefab ve Buton kontrolü yaparak ekle
             if (slotPrefab)
             {
                 GameObject slot = Instantiate(slotPrefab, shopGrid);
-                ResimAyarla(slot, item);
-
+                ResimAyarla(slot, data.esyaIsmi);
                 Button btn = slot.GetComponent<Button>();
-                if (btn)
-                {
-                    string kopya = item;
-                    btn.onClick.AddListener(() => UrunSec(kopya, true));
-                }
+                if (btn) { string kopya = data.esyaIsmi; btn.onClick.AddListener(() => UrunSec(kopya, true)); }
             }
         }
 
-        // Sağ Taraf (OYUNCU)
+        // OYUNCU ENVANTERİ
         Temizle(playerGrid);
         if (gm.playerInventory != null)
         {
@@ -95,19 +65,13 @@ public class ShopManager : MonoBehaviour
                 {
                     GameObject slot = Instantiate(slotPrefab, playerGrid);
                     ResimAyarla(slot, item);
-
                     Button btn = slot.GetComponent<Button>();
-                    if (btn)
-                    {
-                        string kopya = item;
-                        btn.onClick.AddListener(() => UrunSec(kopya, false));
-                    }
+                    if (btn) { string kopya = item; btn.onClick.AddListener(() => UrunSec(kopya, false)); }
                 }
             }
         }
     }
 
-    // --- DİĞER FONKSİYONLAR (Aynı) ---
     void UrunSec(string item, bool buying)
     {
         selectedItem = item;
@@ -117,56 +81,66 @@ public class ShopManager : MonoBehaviour
         if (infoIcon) infoIcon.sprite = gm.ResimGetir(item);
         if (infoName) infoName.text = item;
 
-        int fiyat = GetPrice(item);
+        // --- YENİ FİYAT SİSTEMİ ---
+        var veri = gm.GetItemData(item);
+        int guc = gm.GetItemPower(item);
 
-        if (buying)
+        if (veri != null)
         {
-            if (infoDesc) infoDesc.text = "Satıcı ürünü.";
-            if (infoPrice) infoPrice.text = $"Fiyat: {fiyat}";
-            if (actionButtonText) actionButtonText.text = "SATIN AL";
+            if (buying)
+            {
+                // Dükkandan alırken "satinAlmaFiyati" geçerli
+                currentTransactionPrice = veri.satinAlmaFiyati;
+                if (infoDesc) infoDesc.text = $"Güç: {guc}\n(Dükkan Ürünü)";
+                if (infoPrice) infoPrice.text = $"Fiyat: {currentTransactionPrice} Altın";
+                if (actionButtonText) actionButtonText.text = "SATIN AL";
+            }
+            else
+            {
+                // Satarken "satisFiyati" geçerli
+                currentTransactionPrice = veri.satisFiyati;
+                if (infoDesc) infoDesc.text = $"Güç: {guc}\n(Senin Eşyan)";
+                if (infoPrice) infoPrice.text = $"Değer: {currentTransactionPrice} Altın";
+                if (actionButtonText) actionButtonText.text = "SAT";
+            }
         }
         else
         {
-            int satis = fiyat / 2;
-            if (infoDesc) infoDesc.text = "Senin eşyan.";
-            if (infoPrice) infoPrice.text = $"Değer: {satis}";
-            if (actionButtonText) actionButtonText.text = "SAT";
+            // Hata koruması (Veritabanında yoksa)
+            currentTransactionPrice = 0;
+            if (infoPrice) infoPrice.text = "Fiyat Bilinmiyor";
         }
     }
 
     void IslemYap()
     {
         if (string.IsNullOrEmpty(selectedItem) || gm == null) return;
-        int fiyat = GetPrice(selectedItem);
 
         if (isBuyingMode)
         {
-            if (gm.playerGold >= fiyat)
+            // ALMA
+            if (gm.playerGold >= currentTransactionPrice)
             {
-                gm.playerGold -= fiyat;
+                gm.playerGold -= currentTransactionPrice;
                 gm.playerInventory.Add(selectedItem);
+            }
+            else
+            {
+                Debug.Log("Paran yetmiyor!");
+                return;
             }
         }
         else
         {
-            gm.playerGold += (fiyat / 2);
+            // SATMA
+            gm.playerGold += currentTransactionPrice;
             gm.playerInventory.Remove(selectedItem);
             gm.UnequipItem(gm.GetItemType(selectedItem));
         }
+
         gm.SaveGame();
         infoPanel.SetActive(false);
         RefreshUI();
-    }
-
-    int GetPrice(string item)
-    {
-        if (item.Contains("Tahta")) return 50;
-        if (item.Contains("Demir")) return 150;
-        if (item.Contains("Çelik")) return 300;
-        if (item.Contains("Kraliyet")) return 1000;
-        if (item.Contains("Yüzük")) return 250;
-        if (item.Contains("Efsanevi")) return 5000;
-        return 100;
     }
 
     void Temizle(Transform grid) { foreach (Transform child in grid) Destroy(child.gameObject); }

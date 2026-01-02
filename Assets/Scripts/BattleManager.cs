@@ -8,8 +8,8 @@ using System.Collections.Generic;
 public class BattleManager : MonoBehaviour
 {
     [Header("--- ANIMATOR ---")]
-    public Animator playerAnimator; // Attack1/Attack2/Attack3
-    public Animator enemyAnimator;  // Attack (tek)
+    public Animator playerAnimator;
+    public Animator enemyAnimator;
 
     [Header("--- UI ---")]
     public TextMeshProUGUI playerHealthText;
@@ -20,6 +20,7 @@ public class BattleManager : MonoBehaviour
 
     [Header("--- PANELS ---")]
     public GameObject victoryPanel, defeatPanel;
+    public TextMeshProUGUI victoryRewardText;
 
     [Header("--- SKILL WHEEL ---")]
     public SkillWheelUI skillWheelUI;
@@ -33,6 +34,10 @@ public class BattleManager : MonoBehaviour
     private int playerHealth, playerMana;
     private int enemyHealth, enemyMaxHealth;
     private string currentEnemyName;
+
+    private int rewardXP;
+    private int rewardGold;
+    private int enemyMinDmg, enemyMaxDmg; // Düşman hasarı da artık değişken
 
     private bool isPlayerTurn = true;
     private bool actionLocked = false;
@@ -56,51 +61,35 @@ public class BattleManager : MonoBehaviour
         if (victoryPanel) victoryPanel.SetActive(false);
         if (defeatPanel) defeatPanel.SetActive(false);
 
-        DusmaniYukle();
+        DusmaniYukle(); // Artık GameManager'dan her şeyi çekiyor
         EkraniGuncelle();
 
-        BattleLogEkle(">> Düşmana tıkla: saldırı skilleri (slot1=Attack1, slot2=Attack2, slot3=Attack3)");
-        BattleLogEkle(">> Kendine tıkla: heal/buff skilleri");
+        BattleLogEkle(">> SAVAŞ BAŞLADI!");
         BattleLogEkle(">> Hamle sırası sende!");
     }
 
-    // ClickDetector çağırır:
-    // isPlayerClicked=true => heal/buff (damage<=0)
-    // isPlayerClicked=false => attack (damage>0)
     public void KarakterTiklandi(bool isPlayerClicked)
     {
         if (!isPlayerTurn || actionLocked) return;
-
-        if (skillWheelUI == null)
-        {
-            Debug.LogError("BattleManager: skillWheelUI atanmadı!");
-            return;
-        }
+        if (skillWheelUI == null) return;
 
         var unlocked = gm.GetUnlockedSkills();
-        if (unlocked == null)
-        {
-            Debug.LogError("GameManager.GetUnlockedSkills() null!");
-            return;
-        }
+        if (unlocked == null) return;
 
         List<Skill> list = new List<Skill>();
 
         foreach (var s in unlocked)
         {
             if (s == null) continue;
-
             bool uygun = (isPlayerClicked && s.damage <= 0) || (!isPlayerClicked && s.damage > 0);
             if (!uygun) continue;
-
             if (playerMana < s.manaCost) continue;
-
             list.Add(s);
         }
 
         if (list.Count == 0)
         {
-            BattleLogEkle(">> Uygun skill yok (mana yetmiyor ya da yanlış hedef).");
+            BattleLogEkle(">> Uygun skill yok veya mana yetersiz.");
             return;
         }
 
@@ -108,7 +97,6 @@ public class BattleManager : MonoBehaviour
         skillWheelUI.Open(Input.mousePosition, list, SkillKullanSlotlu);
     }
 
-    // slotIndex = 1..N (wheel sırasi)
     void SkillKullanSlotlu(Skill s, int slotIndex)
     {
         if (s == null) { actionLocked = false; return; }
@@ -118,15 +106,12 @@ public class BattleManager : MonoBehaviour
 
         if (s.damage > 0)
         {
-            // PLAYER: slot 1->Attack1, slot 2->Attack2, slot 3+->Attack3
             string trigger = PlayerSlotToTrigger(slotIndex);
             if (playerAnimator) playerAnimator.SetTrigger(trigger);
-
             StartCoroutine(DamageDelay(isPlayerAttacking: true, delay: 0.55f, bonusDamage: s.damage));
         }
         else
         {
-            // HEAL/BUFF
             int heal = Mathf.Abs(s.damage);
             playerHealth = Mathf.Min(playerHealth + heal, gm.TotalMaxHealth);
             BattleLogEkle($"> {s.skillName}: +{heal} HP");
@@ -151,9 +136,8 @@ public class BattleManager : MonoBehaviour
             int totalDmg = gm.TotalDamage + bonusDamage;
             enemyHealth -= totalDmg;
 
-            BattleLogEkle($"> Selim vurdu: {totalDmg} HASAR!");
+            BattleLogEkle($"> Vurdun: {totalDmg} HASAR!");
 
-            // Enemy Hurt (varsa)
             if (enemyAnimator) enemyAnimator.SetTrigger("Hurt");
             StartCoroutine(FlashColor(enemySprite, Color.red));
 
@@ -161,8 +145,6 @@ public class BattleManager : MonoBehaviour
             {
                 enemyHealth = 0;
                 EkraniGuncelle();
-
-                // Enemy Death (varsa)
                 if (enemyAnimator) enemyAnimator.SetTrigger("Death");
                 yield return new WaitForSeconds(1.2f);
                 Victory();
@@ -174,10 +156,12 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            int dmg = gm.isBossFight ? Random.Range(15, 30) : Random.Range(5, 12);
+            // --- YENİ HASAR SİSTEMİ (LİSTEDEN GELEN) ---
+            int dmg = Random.Range(enemyMinDmg, enemyMaxDmg + 1);
+
             playerHealth -= dmg;
 
-            BattleLogEkle($"! {currentEnemyName} saldırdı: -{dmg} HP");
+            BattleLogEkle($"! {currentEnemyName} vurdu: -{dmg} HP");
 
             if (playerAnimator) playerAnimator.SetTrigger("Hurt");
             StartCoroutine(FlashColor(playerSprite, Color.red));
@@ -186,7 +170,6 @@ public class BattleManager : MonoBehaviour
             {
                 playerHealth = 0;
                 EkraniGuncelle();
-
                 if (playerAnimator) playerAnimator.SetTrigger("Death");
                 yield return new WaitForSeconds(1.5f);
                 Defeat();
@@ -195,7 +178,7 @@ public class BattleManager : MonoBehaviour
 
             isPlayerTurn = true;
             actionLocked = false;
-            BattleLogEkle(">> Hamle sırası sende!");
+            BattleLogEkle(">> Sıra sende!");
             EkraniGuncelle();
         }
     }
@@ -204,7 +187,6 @@ public class BattleManager : MonoBehaviour
     {
         isPlayerTurn = false;
         actionLocked = true;
-
         CancelInvoke(nameof(EnemyTurn));
         Invoke(nameof(EnemyTurn), 1.1f);
     }
@@ -212,10 +194,7 @@ public class BattleManager : MonoBehaviour
     void EnemyTurn()
     {
         if (enemyHealth <= 0 || playerHealth <= 0) return;
-
-        // ENEMY: tek saldırı -> "Attack"
         if (enemyAnimator) enemyAnimator.SetTrigger("Attack");
-
         StartCoroutine(DamageDelay(isPlayerAttacking: false, delay: 0.55f, bonusDamage: 0));
     }
 
@@ -233,21 +212,23 @@ public class BattleManager : MonoBehaviour
         battleLogText.text += "\n" + msg;
     }
 
+    // --- OTOMATİK DÜŞMAN YÜKLEME ---
     void DusmaniYukle()
     {
-        currentEnemyName = gm.GetCurrentEnemyName();
+        // GameManager'dan o levelin düşman bilgisini komple çekiyoruz
+        EnemyInfo info = gm.GetCurrentEnemyInfo();
 
-        switch (currentEnemyName)
-        {
-            case "Acemi Haydut": enemyMaxHealth = 300; gm.isBossFight = false; break;
-            case "Haydut": enemyMaxHealth = 300; gm.isBossFight = false; break;
-            case "Zehirli Örümcek": enemyMaxHealth = 120; gm.isBossFight = false; break;
-            case "Hantal HP": enemyMaxHealth = 500; gm.isBossFight = true; break;
-            default: enemyMaxHealth = 100; gm.isBossFight = false; break;
-        }
+        currentEnemyName = info.dusmanAdi;
+        enemyMaxHealth = info.maxCan;
+        enemyMinDmg = info.minHasar;
+        enemyMaxDmg = info.maxHasar;
+        rewardXP = info.verilecekXP;
+        rewardGold = info.verilecekGold;
+        gm.isBossFight = info.bossMu;
 
         enemyHealth = enemyMaxHealth;
 
+        // UI Güncellemeleri
         if (enemyHealthText)
         {
             enemyHealthText.text = currentEnemyName;
@@ -260,7 +241,8 @@ public class BattleManager : MonoBehaviour
             enemyHealthSlider.value = enemyHealth;
         }
 
-        BattleLogEkle($">> {currentEnemyName} ile karşı karşıyasın!");
+        BattleLogEkle($">> {currentEnemyName} (Güç: {enemyMinDmg}-{enemyMaxDmg})");
+        BattleLogEkle($">> Ödül: {rewardXP}XP, {rewardGold}G");
     }
 
     void EkraniGuncelle()
@@ -275,10 +257,22 @@ public class BattleManager : MonoBehaviour
 
     void Victory()
     {
+        gm.playerGold += rewardGold;
+        gm.GainExperience(rewardXP);
+
+        BattleLogEkle($"*** ZAFER! ***");
+        BattleLogEkle($"+{rewardXP} XP kazanıldı.");
+        BattleLogEkle($"+{rewardGold} Altın kazanıldı.");
+
+        if (victoryRewardText)
+        {
+            victoryRewardText.text = $"TEBRİKLER!\n\nKazanılan:\n{rewardXP} XP\n{rewardGold} Altın";
+        }
+
         gm.SavasKazanildi();
         if (victoryPanel) victoryPanel.SetActive(true);
         CancelInvoke();
-        Invoke(nameof(GoToStory), 2f);
+        Invoke(nameof(GoToStory), 2.5f);
     }
 
     void Defeat()

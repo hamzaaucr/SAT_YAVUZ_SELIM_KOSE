@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &94629125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 94629126}
+  - component: {fileID: 94629127}
+  m_Layer: 0
+  m_Name: EquipmentSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &94629126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94629125}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 137.3778, y: -123.045456, z: 0}
+  m_LocalScale: {x: 1.694616, y: 1.694616, z: 1.694616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 358963374}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &94629127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94629125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: Ring1
+  manager: {fileID: 0}
 --- !u!1 &97245004
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,142 +497,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192585642}
   m_CullTransparentMesh: 1
---- !u!1001 &241866959
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3445012374369271618, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 509.4406
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445012374369271618, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 256.98538
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445012374369271618, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445012374369271618, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445012374369271618, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445012374369271618, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445012374369271618, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445012374369271618, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445012374369271618, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445012374369271618, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].fightNo
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].bolumAdi
-      value: "Ba\u015Flang\u0131\xE7"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].chapterNo
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].hikayeMetni
-      value: "Karakter aya\u011Fa kalkmaya \xE7al\u0131\u015F\u0131r ancak ba\u015F\u0131
-        d\xF6ner. Kim oldu\u011Funa dair en ufak bir fikri yoktur. Tam bu s\u0131rada,
-        g\xF6lgelerin aras\u0131ndan ya\u015Fl\u0131, \xFCst\xFC ba\u015F\u0131 y\u0131pranm\u0131\u015F
-        ama te\xE7hizatl\u0131 bir adam \xE7\u0131kar ve karakterin a\u011Fz\u0131n\u0131
-        eliyle kapat\u0131p onu bir s\xFCtunun arkas\u0131na \xE7eker."
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[0].cumle
-      value: "\"\u015E\u015F\u015Ft... Nefes bile alma. Onlar, korkunun kokusunu
-        alabiliyor.\""
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[1].cumle
-      value: "\"Sen kimsin? Buras\u0131 neresi? Ben... hi\xE7bir \u015Fey hat\u0131rlam\u0131yorum.\""
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[2].cumle
-      value: "\"Hat\u0131rlamaman senin i\xE7in bir l\xFCtuf, evlat. Burada an\u0131lar
-        y\xFCkt\xFCr. Zihnin ne kadar doluysa, o '\u015Feyler' seni o kadar \xE7abuk
-        bulur.\""
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[0].konusanIsim
-      value: Elias
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[1].konusanIsim
-      value: Ana Karakter
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[2].konusanIsim
-      value: Elias
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[0].karakterResmi
-      value: 
-      objectReference: {fileID: -1692924951201596939, guid: b3e5d6fc5f85d474fb7667bf591e9131, type: 3}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[1].karakterResmi
-      value: 
-      objectReference: {fileID: -3063201976715654419, guid: 47a99715de6471f43a366339ca3d8964, type: 3}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[2].karakterResmi
-      value: 
-      objectReference: {fileID: -1692924951201596939, guid: b3e5d6fc5f85d474fb7667bf591e9131, type: 3}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[0].sagTarafKonusuyor
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[1].sagTarafKonusuyor
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5905344046108268807, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: tumSenaryo.Array.data[0].diyaloglar.Array.data[2].sagTarafKonusuyor
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7860810305454202424, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5ca8ee1a00743734baad2e7baadc6daf, type: 3}
 --- !u!1 &268237384
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,6 +835,7 @@ GameObject:
   - component: {fileID: 358963377}
   - component: {fileID: 358963376}
   - component: {fileID: 358963375}
+  - component: {fileID: 358963378}
   m_Layer: 5
   m_Name: Ring1IconButton
   m_TagString: Untagged
@@ -945,6 +856,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 758457551}
+  - {fileID: 94629126}
   m_Father: {fileID: 1018610027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1034,6 +946,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358963373}
   m_CullTransparentMesh: 1
+--- !u!114 &358963378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358963373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: 
+  manager: {fileID: 0}
 --- !u!1 &372285429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1108,7 @@ GameObject:
   - component: {fileID: 389986603}
   - component: {fileID: 389986602}
   - component: {fileID: 389986601}
+  - component: {fileID: 389986604}
   m_Layer: 5
   m_Name: GlovesIconButton
   m_TagString: Untagged
@@ -1202,6 +1129,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1259721074}
+  - {fileID: 1236458634}
   m_Father: {fileID: 1018610027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1291,6 +1219,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389986599}
   m_CullTransparentMesh: 1
+--- !u!114 &389986604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389986599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: 
+  manager: {fileID: 0}
 --- !u!1 &544678715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,6 +1517,7 @@ GameObject:
   - component: {fileID: 694301016}
   - component: {fileID: 694301015}
   - component: {fileID: 694301014}
+  - component: {fileID: 694301017}
   m_Layer: 5
   m_Name: Unique2IconButton
   m_TagString: Untagged
@@ -1595,6 +1538,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1546233632}
+  - {fileID: 2136066519}
   m_Father: {fileID: 1018610027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1684,6 +1628,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694301012}
   m_CullTransparentMesh: 1
+--- !u!114 &694301017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694301012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: 
+  manager: {fileID: 0}
 --- !u!1 &725845014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2377,6 +2335,7 @@ GameObject:
   - component: {fileID: 1010134284}
   - component: {fileID: 1010134283}
   - component: {fileID: 1010134282}
+  - component: {fileID: 1010134285}
   m_Layer: 5
   m_Name: Unique1IconButton
   m_TagString: Untagged
@@ -2397,6 +2356,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1715570760}
+  - {fileID: 1396438643}
   m_Father: {fileID: 1018610027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2486,6 +2446,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010134280}
   m_CullTransparentMesh: 1
+--- !u!114 &1010134285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010134280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: 
+  manager: {fileID: 0}
 --- !u!1 &1018610026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2881,8 +2855,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1922829144}
   m_HandleRect: {fileID: 1922829143}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.99992067
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2925,6 +2899,1447 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058646458}
   m_CullTransparentMesh: 1
+--- !u!1001 &1152183688
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: playerGold
+      value: 750
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: skillPoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: totalFightsPerChapter
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.size
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[0].damage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[1].damage
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[2].damage
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[0].manaCost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[1].manaCost
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[2].manaCost
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[0].skillIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 2759ee3ae34ecb148bb7b65fbff7ccc6, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[1].skillName
+      value: "Kutsal I\u015F\u0131k"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[2].skillName
+      value: "G\xF6k \xC7arpmas\u0131"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[1].description
+      value: "\"Kutsal I\u015F\u0131\u011F\u0131 Kullanarak kendini ya da arkada\u015Flar\u0131n\u0131
+        iyile\u015Ftir.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[2].description
+      value: "\"\u015Eim\u015Fe\u011Fin saf enerjisiyle d\xFC\u015Fman\u0131 a\u015F\u0131r\u0131
+        y\xFCkle!\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[0].maxCan
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[1].maxCan
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[2].maxCan
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[3].maxCan
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[4].maxCan
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[5].maxCan
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[6].maxCan
+      value: 1300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[7].bossMu
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[7].maxCan
+      value: 1700
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[8].maxCan
+      value: 2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[9].maxCan
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[1].requiredLevel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: gameSkills.Array.data[2].requiredLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[0].maxHasar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[0].minHasar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[1].maxHasar
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[1].minHasar
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[2].maxHasar
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[2].minHasar
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[3].maxHasar
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[3].minHasar
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[4].maxHasar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[4].minHasar
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[5].maxHasar
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[5].minHasar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[6].maxHasar
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[6].minHasar
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[7].maxHasar
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[7].minHasar
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[8].maxHasar
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[8].minHasar
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[9].maxHasar
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[9].minHasar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[0].dusmanAdi
+      value: "Ayya\u015F"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[1].dusmanAdi
+      value: Serseri
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[2].dusmanAdi
+      value: YanKesici
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[3].dusmanAdi
+      value: "\xC7\u0131rak Haydut"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[4].dusmanAdi
+      value: Acemi Haydut
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[5].dusmanAdi
+      value: Kalfa Haydut
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[6].dusmanAdi
+      value: "K\u0131demli Haydut"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[7].dusmanAdi
+      value: Usta Haydut
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[8].dusmanAdi
+      value: "Patronun Sa\u011F Kolu"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[9].dusmanAdi
+      value: Kalfa Haydut
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[0].esyaIsmi
+      value: "Alt\u0131n K\u0131l\u0131\xE7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[1].esyaIsmi
+      value: "Efsanevi K\u0131l\u0131\xE7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[2].esyaIsmi
+      value: "Deri Z\u0131rh"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[3].esyaIsmi
+      value: "Demir Z\u0131rh"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[4].esyaIsmi
+      value: "\u015E\xF6valye Mi\u011Fferi"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[5].esyaIsmi
+      value: Tahta Kalkan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[6].esyaIsmi
+      value: "Yakut Y\xFCz\xFCk"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[7].esyaIsmi
+      value: "K\xFC\xE7\xFCk \u0130ksir"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[8].esyaIsmi
+      value: "Gizemli \u0130ksir"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[9].esyaIsmi
+      value: "Gizemli \u0130ksir"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[0].esyaResmi
+      value: 
+      objectReference: {fileID: 5557580574306748709, guid: ba7c4eaec125a89458903c27699c1784, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[1].esyaResmi
+      value: 
+      objectReference: {fileID: 6060688741046563079, guid: 48cb136ca379c1945b209f7cfec69f55, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[2].esyaResmi
+      value: 
+      objectReference: {fileID: 3088541613197650523, guid: 01f5b1dd267bfc844a13e9b87375bd32, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[3].esyaResmi
+      value: 
+      objectReference: {fileID: 5556341641646306648, guid: 89f5f16541c788f4988151ec3019275b, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[4].esyaResmi
+      value: 
+      objectReference: {fileID: 3218721836051569067, guid: d856211a5cf135248b548c35b862f13a, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[5].esyaResmi
+      value: 
+      objectReference: {fileID: 5110971536291881076, guid: ca20b32bf8e9e934fa5db8a1ae45bbd5, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[6].esyaResmi
+      value: 
+      objectReference: {fileID: -1666933443714990831, guid: 975021a0d6581a2458557b47e2d0fe0b, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[7].esyaResmi
+      value: 
+      objectReference: {fileID: 4704929228616946384, guid: 10d8d92702f6bca4283036359b915735, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[8].esyaResmi
+      value: 
+      objectReference: {fileID: -227398099809153907, guid: 7f5ca9c9942cc7a418f5af97c9ef911e, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyaResimleri.Array.data[9].esyaResmi
+      value: 
+      objectReference: {fileID: -227398099809153907, guid: 7f5ca9c9942cc7a418f5af97c9ef911e, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[0].verilecekXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[1].verilecekXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[2].verilecekXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[3].verilecekXP
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[4].verilecekXP
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[5].verilecekXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[6].verilecekXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[7].verilecekXP
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[8].verilecekXP
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[9].verilecekXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[0].esyaGucu
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[0].esyaIsmi
+      value: "Tahta K\u0131l\u0131\xE7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[0].esyaTuru
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[1].esyaGucu
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[1].esyaIsmi
+      value: "Metal K\u0131l\u0131\xE7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[1].esyaTuru
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[2].esyaGucu
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[2].esyaIsmi
+      value: "Demir K\u0131l\u0131\xE7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[2].esyaTuru
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[3].esyaGucu
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[3].esyaIsmi
+      value: "Alt\u0131n K\u0131l\u0131\xE7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[3].esyaTuru
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[4].esyaGucu
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[4].esyaIsmi
+      value: "Adamantit K\u0131l\u0131\xE7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[4].esyaTuru
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[5].esyaGucu
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[5].esyaIsmi
+      value: "Tahta Y\xFCz\xFCk"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[5].esyaTuru
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[6].esyaGucu
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[6].esyaIsmi
+      value: "Metal Y\xFCz\xFCk"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[6].esyaTuru
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[7].esyaGucu
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[7].esyaIsmi
+      value: "Demir Y\xFCz\xFCk"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[7].esyaTuru
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[8].esyaGucu
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[8].esyaIsmi
+      value: "Alt\u0131n Y\xFCz\xFCk"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[8].esyaTuru
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[9].esyaGucu
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[9].esyaIsmi
+      value: "Adamantit Y\xFCz\xFCk"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[9].esyaTuru
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[0].esyaResmi
+      value: 
+      objectReference: {fileID: 5681407956014223061, guid: c3c3cb72cf5175d459f8f02264b8c205, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[10].esyaGucu
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[10].esyaIsmi
+      value: "Deri Z\u0131rh"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[10].esyaTuru
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[11].esyaGucu
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[11].esyaIsmi
+      value: "Demir Z\u0131rh"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[11].esyaTuru
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[12].esyaGucu
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[12].esyaIsmi
+      value: "Alt\u0131n ZIrh"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[12].esyaTuru
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[13].esyaGucu
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[13].esyaIsmi
+      value: "Elmas Z\u0131rh"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[13].esyaTuru
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[14].esyaGucu
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[14].esyaIsmi
+      value: "Adamantit Z\u0131rh"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[14].esyaTuru
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[15].esyaGucu
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[15].esyaIsmi
+      value: "Deri Mi\u011Ffer"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[15].esyaTuru
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[16].esyaGucu
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[16].esyaIsmi
+      value: "Demir Mi\u011Ffer"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[16].esyaTuru
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[17].esyaGucu
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[17].esyaIsmi
+      value: "Alt\u0131n Mi\u011Ffer"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[17].esyaTuru
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[18].esyaGucu
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[18].esyaIsmi
+      value: "Elmas Mi\u011Ffer"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[18].esyaTuru
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[19].esyaGucu
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[19].esyaIsmi
+      value: "Adamantit Mi\u011Ffer"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[19].esyaTuru
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[1].esyaResmi
+      value: 
+      objectReference: {fileID: 3126377148437078776, guid: 2374dfdd842ee1c41a4d5da07742f6c6, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[20].esyaGucu
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[20].esyaIsmi
+      value: Deri Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[20].esyaTuru
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[21].esyaGucu
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[21].esyaIsmi
+      value: Demir Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[21].esyaTuru
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[22].esyaGucu
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[22].esyaIsmi
+      value: "Alt\u0131n Bot"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[22].esyaTuru
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[23].esyaGucu
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[23].esyaIsmi
+      value: Elmas Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[23].esyaTuru
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[24].esyaGucu
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[24].esyaIsmi
+      value: Adamantit Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[24].esyaTuru
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[25].esyaGucu
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[25].esyaIsmi
+      value: Deri Eldiven
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[25].esyaTuru
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[26].esyaGucu
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[26].esyaIsmi
+      value: Demir Eldiven
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[26].esyaTuru
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[27].esyaGucu
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[27].esyaIsmi
+      value: "Alt\u0131n Eldiven"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[27].esyaTuru
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[28].esyaGucu
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[28].esyaIsmi
+      value: "Alt\u0131n Eldiven"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[28].esyaTuru
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[29].esyaGucu
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[29].esyaIsmi
+      value: Adamantit Eldiven
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[29].esyaTuru
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[2].esyaResmi
+      value: 
+      objectReference: {fileID: 3512103926272436595, guid: 8a74ead9ac7421642a47833c4b9fc1fc, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[30].esyaGucu
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[30].esyaIsmi
+      value: Tahta Kalkan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[30].esyaTuru
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[31].esyaGucu
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[31].esyaIsmi
+      value: Demir Kalkan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[31].esyaTuru
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[32].esyaGucu
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[32].esyaIsmi
+      value: "Alt\u0131n Kalkan"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[32].esyaTuru
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[33].esyaGucu
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[33].esyaIsmi
+      value: Elmas Kalkan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[33].esyaTuru
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[34].esyaGucu
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[34].esyaIsmi
+      value: Adamantit Kalkan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[34].esyaTuru
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[35].esyaGucu
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[35].esyaIsmi
+      value: Eski Kolye
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[35].esyaTuru
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[36].esyaGucu
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[36].esyaIsmi
+      value: Yakut Kolye
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[36].esyaTuru
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[37].esyaGucu
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[37].esyaIsmi
+      value: "G\xFC\xE7 Ta\u015F\u0131"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[37].esyaTuru
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[38].esyaGucu
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[38].esyaIsmi
+      value: "Feryat Kitab\u0131"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[38].esyaTuru
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[39].esyaGucu
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[39].esyaIsmi
+      value: "Feryat Kitab\u0131"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[39].esyaTuru
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[3].esyaResmi
+      value: 
+      objectReference: {fileID: 6106885858027760707, guid: 09f419ada11a1e045bc98495e8339b38, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[4].esyaResmi
+      value: 
+      objectReference: {fileID: 2370178707641904052, guid: 8c0d99e38ef95204092b48729846813a, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[5].esyaResmi
+      value: 
+      objectReference: {fileID: -5959828144380127873, guid: 629cdefdb860a2649b99f4a12bef8ca3, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[6].esyaResmi
+      value: 
+      objectReference: {fileID: 5803681514650601596, guid: 5340a9f5c33cbf54abd88335ae59153b, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[7].esyaResmi
+      value: 
+      objectReference: {fileID: 5515584788140303851, guid: 299b82ea575a3fe47b3a43919662a9b7, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[8].esyaResmi
+      value: 
+      objectReference: {fileID: -5694366239668378395, guid: f725e7fc831381e4eaeb75c5c85ce64b, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[9].esyaResmi
+      value: 
+      objectReference: {fileID: 6753055269854337813, guid: 3b684a3773ade154e84caaf4f273f2b9, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[0].verilecekGold
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[1].verilecekGold
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[2].verilecekGold
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[3].verilecekGold
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[4].verilecekGold
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[5].verilecekGold
+      value: 750
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[6].verilecekGold
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[7].verilecekGold
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[8].verilecekGold
+      value: 2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: levelDusmanlari.Array.data[9].verilecekGold
+      value: 750
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[10].esyaResmi
+      value: 
+      objectReference: {fileID: 2913249149326906964, guid: f6292264b106f384fa545f45727b6134, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[11].esyaResmi
+      value: 
+      objectReference: {fileID: 4041087145339970276, guid: 45423944b236e9342bf4c68958cfb390, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[12].esyaResmi
+      value: 
+      objectReference: {fileID: 6561790214489973282, guid: eb3e898cd3106784d981e717d8a14c39, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[13].esyaResmi
+      value: 
+      objectReference: {fileID: -7804343946356941737, guid: fec5f43fc46e1124e9ef510e9e3180e2, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[14].esyaResmi
+      value: 
+      objectReference: {fileID: -3011229782246826431, guid: 22d6535b83ba3c54d891cdbf9fcb832d, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[15].esyaResmi
+      value: 
+      objectReference: {fileID: -7005804840406525423, guid: 55377703b39fec545bb01c03a9b0be7e, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[16].esyaResmi
+      value: 
+      objectReference: {fileID: -418650231194818738, guid: cdce9114fbe557f4fbbabf93573390ed, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[17].esyaResmi
+      value: 
+      objectReference: {fileID: 5847960786599624087, guid: 5c2d503f8b4a13a4f9811fa0116ce247, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[18].esyaResmi
+      value: 
+      objectReference: {fileID: 1664509943649144175, guid: 6ed2c5f23fd92394695766f046a95ef6, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[19].esyaResmi
+      value: 
+      objectReference: {fileID: 357466439282985830, guid: 44b842a6bbbb87f4aa4542f0238e0fe9, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[20].esyaResmi
+      value: 
+      objectReference: {fileID: -6023994873605954907, guid: e367e829c73f09748a31b53ec188f842, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[21].esyaResmi
+      value: 
+      objectReference: {fileID: -8801347858350865775, guid: 462137a6678a3a84393bc0f471d2a5e0, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[22].esyaResmi
+      value: 
+      objectReference: {fileID: -229854331140094514, guid: 6678a481972ae3044b518a65e319437d, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[23].esyaResmi
+      value: 
+      objectReference: {fileID: 4418083714772906797, guid: 105b4e7d2dc158c43b949d0004befcd8, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[24].esyaResmi
+      value: 
+      objectReference: {fileID: -6023994873605954907, guid: e367e829c73f09748a31b53ec188f842, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[25].esyaResmi
+      value: 
+      objectReference: {fileID: -2693528012177461458, guid: c3e5114e085e5524cba110ce5678c7f7, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[26].esyaResmi
+      value: 
+      objectReference: {fileID: -6757373160696036869, guid: eb36903a94d0cd44db4da14608c69be9, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[27].esyaResmi
+      value: 
+      objectReference: {fileID: 740631721098038716, guid: 5ab4dcedc71753c4a8053a2e8b90090e, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[28].esyaResmi
+      value: 
+      objectReference: {fileID: -3717342820243255436, guid: 69c4d70b60638cc43a84b55c01c5acc6, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[29].esyaResmi
+      value: 
+      objectReference: {fileID: -4890579314203296079, guid: 0e875b590eab91042a46ff460fe441ba, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[30].esyaResmi
+      value: 
+      objectReference: {fileID: 4276950136020775699, guid: 526fbd1ab05d39044b8532301c2dbed0, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[31].esyaResmi
+      value: 
+      objectReference: {fileID: -6360245308494984325, guid: 0898e9889a063954eac9bd2177730659, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[32].esyaResmi
+      value: 
+      objectReference: {fileID: -6360245308494984325, guid: 0898e9889a063954eac9bd2177730659, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[33].esyaResmi
+      value: 
+      objectReference: {fileID: -8883299377335679783, guid: bb4fc64c72061d6418dfb6c64ad68939, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[34].esyaResmi
+      value: 
+      objectReference: {fileID: -2523510824583251623, guid: a6e55187ebc985e4ab91301838a29c2c, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[35].esyaResmi
+      value: 
+      objectReference: {fileID: -104226450262520760, guid: 9ab4e2db966ce354ca1be8394ec70f2e, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[36].esyaResmi
+      value: 
+      objectReference: {fileID: -5642259298463014151, guid: d544287722aa96d42bfe4a64bffe856c, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[37].esyaResmi
+      value: 
+      objectReference: {fileID: -9092089837320223941, guid: b2150783bf0c3ea43860e20a735ac63f, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[38].esyaResmi
+      value: 
+      objectReference: {fileID: -4779124773871600125, guid: 7c92c613edc41ee408971845ef1bb73d, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[39].esyaResmi
+      value: 
+      objectReference: {fileID: -4779124773871600125, guid: 7c92c613edc41ee408971845ef1bb73d, type: 3}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[1].satisFiyati
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[2].satisFiyati
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[3].satisFiyati
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[4].satisFiyati
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[5].satisFiyati
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[6].satisFiyati
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[7].satisFiyati
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[8].satisFiyati
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[9].satisFiyati
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[11].satisFiyati
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[12].satisFiyati
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[13].satisFiyati
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[14].satisFiyati
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[16].satisFiyati
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[17].satisFiyati
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[18].satisFiyati
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[19].satisFiyati
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[21].satisFiyati
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[22].satisFiyati
+      value: 225
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[23].satisFiyati
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[24].satisFiyati
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[26].satisFiyati
+      value: 105
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[27].satisFiyati
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[28].satisFiyati
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[29].satisFiyati
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[31].satisFiyati
+      value: 135
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[32].satisFiyati
+      value: 225
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[33].satisFiyati
+      value: 325
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[34].satisFiyati
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[35].satisFiyati
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[36].satisFiyati
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[37].satisFiyati
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[38].satisFiyati
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[39].satisFiyati
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[1].satinAlmaFiyati
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[2].satinAlmaFiyati
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[3].satinAlmaFiyati
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[4].satinAlmaFiyati
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[5].satinAlmaFiyati
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[6].satinAlmaFiyati
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[7].satinAlmaFiyati
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[8].satinAlmaFiyati
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[9].satinAlmaFiyati
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[10].satinAlmaFiyati
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[11].satinAlmaFiyati
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[12].satinAlmaFiyati
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[13].satinAlmaFiyati
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[14].satinAlmaFiyati
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[15].satinAlmaFiyati
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[16].satinAlmaFiyati
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[17].satinAlmaFiyati
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[18].satinAlmaFiyati
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[19].satinAlmaFiyati
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[20].satinAlmaFiyati
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[21].satinAlmaFiyati
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[22].satinAlmaFiyati
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[23].satinAlmaFiyati
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[24].satinAlmaFiyati
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[25].satinAlmaFiyati
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[26].satinAlmaFiyati
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[27].satinAlmaFiyati
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[28].satinAlmaFiyati
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[29].satinAlmaFiyati
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[30].satinAlmaFiyati
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[31].satinAlmaFiyati
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[32].satinAlmaFiyati
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[33].satinAlmaFiyati
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[34].satinAlmaFiyati
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[35].satinAlmaFiyati
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[36].satinAlmaFiyati
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[37].satinAlmaFiyati
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[38].satinAlmaFiyati
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332857600884123300, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: tumEsyalarDatabase.Array.data[39].satinAlmaFiyati
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334982293951341025, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 524.1115
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334982293951341025, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 373.24973
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334982293951341025, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334982293951341025, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334982293951341025, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334982293951341025, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334982293951341025, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334982293951341025, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334982293951341025, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334982293951341025, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337865374385151510, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+      propertyPath: m_Name
+      value: GameManager 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 771d224024c5f9941b876d7a2041331e, type: 3}
+--- !u!1 &1236458633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1236458634}
+  - component: {fileID: 1236458635}
+  m_Layer: 0
+  m_Name: EquipmentSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1236458634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236458633}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -123.14191, y: 200.05646, z: 0}
+  m_LocalScale: {x: 1.694616, y: 1.694616, z: 1.694616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389986600}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1236458635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236458633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: Gloves
+  manager: {fileID: 0}
 --- !u!1 &1259721073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,6 +4415,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259721073}
   m_CullTransparentMesh: 1
+--- !u!1 &1273905014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1273905015}
+  - component: {fileID: 1273905016}
+  m_Layer: 0
+  m_Name: EquipmentSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1273905015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273905014}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 437.9775, y: 188.71948, z: 0}
+  m_LocalScale: {x: 1.694616, y: 1.694616, z: 1.694616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1399081583}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1273905016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273905014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: Body
+  manager: {fileID: 0}
 --- !u!1 &1364799496
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,6 +4662,52 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1396438642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1396438643}
+  - component: {fileID: 1396438644}
+  m_Layer: 0
+  m_Name: EquipmentSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1396438643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396438642}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 728.5572, y: -123.0455, z: 0}
+  m_LocalScale: {x: 1.694616, y: 1.694616, z: 1.694616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1010134281}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1396438644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396438642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: Unique1
+  manager: {fileID: 0}
 --- !u!1 &1397641639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,6 +4720,7 @@ GameObject:
   - component: {fileID: 1397641643}
   - component: {fileID: 1397641642}
   - component: {fileID: 1397641641}
+  - component: {fileID: 1397641644}
   m_Layer: 5
   m_Name: HandRIconButton
   m_TagString: Untagged
@@ -3233,6 +4741,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1817304241}
+  - {fileID: 2018077588}
   m_Father: {fileID: 1018610027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3322,6 +4831,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397641639}
   m_CullTransparentMesh: 1
+--- !u!114 &1397641644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397641639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: 
+  manager: {fileID: 0}
+--- !u!1 &1399049087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1399049088}
+  - component: {fileID: 1399049089}
+  m_Layer: 0
+  m_Name: EquipmentSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1399049088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399049087}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 437.9775, y: 514.71844, z: 0}
+  m_LocalScale: {x: 1.694616, y: 1.694616, z: 1.694616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1410004832}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1399049089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399049087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: Legs
+  manager: {fileID: 0}
 --- !u!1 &1399081582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3334,6 +4903,7 @@ GameObject:
   - component: {fileID: 1399081586}
   - component: {fileID: 1399081585}
   - component: {fileID: 1399081584}
+  - component: {fileID: 1399081587}
   m_Layer: 5
   m_Name: BodyIconButton
   m_TagString: Untagged
@@ -3353,6 +4923,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1273905015}
   - {fileID: 837888759}
   m_Father: {fileID: 1018610027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3443,6 +5014,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399081582}
   m_CullTransparentMesh: 1
+--- !u!114 &1399081587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399081582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: 
+  manager: {fileID: 0}
 --- !u!1 &1406384546
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,7 +5113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3564,6 +5149,7 @@ GameObject:
   - component: {fileID: 1410004835}
   - component: {fileID: 1410004834}
   - component: {fileID: 1410004833}
+  - component: {fileID: 1410004836}
   m_Layer: 5
   m_Name: LegsIconButton
   m_TagString: Untagged
@@ -3584,6 +5170,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1978155821}
+  - {fileID: 1399049088}
   m_Father: {fileID: 1018610027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3673,6 +5260,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410004831}
   m_CullTransparentMesh: 1
+--- !u!114 &1410004836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410004831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: 
+  manager: {fileID: 0}
 --- !u!1 &1489401075
 GameObject:
   m_ObjectHideFlags: 0
@@ -3884,6 +5485,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546233631}
   m_CullTransparentMesh: 1
+--- !u!1 &1587411681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1587411682}
+  - component: {fileID: 1587411683}
+  m_Layer: 0
+  m_Name: EquipmentSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1587411682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587411681}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 137.3778, y: 528.8268, z: 0}
+  m_LocalScale: {x: 1.694616, y: 1.694616, z: 1.694616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2081736513}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1587411683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587411681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: Ring2
+  manager: {fileID: 0}
 --- !u!1 &1608623506
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,17 +5672,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647606922}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.008726558, z: 0, w: 0.999962}
+  m_LocalPosition: {x: 0, y: 0, z: 10.812101}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1029371797}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 1, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000521821}
-  m_SizeDelta: {x: 0, y: 300}
+  m_AnchoredPosition: {x: 0.00003107914, y: -0.000015258789}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1647606924
 MonoBehaviour:
@@ -4050,7 +5697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 0
-  m_VerticalFit: 0
+  m_VerticalFit: 2
 --- !u!114 &1647606925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4068,11 +5715,11 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 1
+  m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &1658159830
@@ -4332,8 +5979,12 @@ MonoBehaviour:
   charClassText: {fileID: 268237386}
   nextCharButton: {fileID: 964251722}
   prevCharButton: {fileID: 169024128}
-  slotPrefab: {fileID: 3419264447750547066, guid: 3dbd4239339534840a19a25bd11892e4, type: 3}
-  gridKutusu: {fileID: 1406384547}
+  sfxSource: {fileID: 0}
+  soundWeapon: {fileID: 8300000, guid: fc236d0ba7347d344bd8baa9ad84f5ca, type: 3}
+  soundArmor: {fileID: 8300000, guid: 08590030b2a09f04ab9d223e555f264a, type: 3}
+  soundRing: {fileID: 8300000, guid: ed1c6962c7963a841bcc4c9964736cb3, type: 3}
+  slotPrefab: {fileID: 2525316510781789179, guid: 6ec4363e36fe04e47962f563d9eaf70f, type: 3}
+  gridKutusu: {fileID: 1647606923}
   imgHelm: {fileID: 1679983119}
   imgBody: {fileID: 837888760}
   imgLegs: {fileID: 1978155822}
@@ -4603,6 +6254,7 @@ GameObject:
   - component: {fileID: 1729180125}
   - component: {fileID: 1729180124}
   - component: {fileID: 1729180123}
+  - component: {fileID: 1729180126}
   m_Layer: 5
   m_Name: HeadIconButton
   m_TagString: Untagged
@@ -4623,6 +6275,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1679983118}
+  - {fileID: 2026422380}
   m_Father: {fileID: 1018610027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4712,6 +6365,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729180121}
   m_CullTransparentMesh: 1
+--- !u!114 &1729180126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729180121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: 
+  manager: {fileID: 0}
 --- !u!1 &1757845042
 GameObject:
   m_ObjectHideFlags: 0
@@ -4724,6 +6391,7 @@ GameObject:
   - component: {fileID: 1757845046}
   - component: {fileID: 1757845045}
   - component: {fileID: 1757845044}
+  - component: {fileID: 1757845047}
   m_Layer: 5
   m_Name: HandLIconButton
   m_TagString: Untagged
@@ -4744,6 +6412,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2131556855}
+  - {fileID: 1959627551}
   m_Father: {fileID: 1018610027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4833,6 +6502,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757845042}
   m_CullTransparentMesh: 1
+--- !u!114 &1757845047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757845042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: 
+  manager: {fileID: 0}
 --- !u!1 &1817304240
 GameObject:
   m_ObjectHideFlags: 0
@@ -4994,6 +6677,8 @@ GameObject:
   - component: {fileID: 1856334736}
   - component: {fileID: 1856334735}
   - component: {fileID: 1856334734}
+  - component: {fileID: 1856334738}
+  - component: {fileID: 1856334737}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -5008,7 +6693,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856334733}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
@@ -5062,6 +6747,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856334737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856334733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.StandaloneInputModule
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1856334738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856334733}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!1 &1875867312
 GameObject:
   m_ObjectHideFlags: 0
@@ -5333,6 +7069,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922829142}
   m_CullTransparentMesh: 1
+--- !u!1 &1959627550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1959627551}
+  - component: {fileID: 1959627552}
+  m_Layer: 0
+  m_Name: EquipmentSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1959627551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959627550}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 738.57715, y: 188.71948, z: 0}
+  m_LocalScale: {x: 1.694616, y: 1.694616, z: 1.694616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757845043}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1959627552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959627550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: Shield
+  manager: {fileID: 0}
 --- !u!1 &1978155820
 GameObject:
   m_ObjectHideFlags: 0
@@ -5408,6 +7190,98 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978155820}
   m_CullTransparentMesh: 1
+--- !u!1 &2018077587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2018077588}
+  - component: {fileID: 2018077589}
+  m_Layer: 0
+  m_Name: EquipmentSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2018077588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018077587}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -147.3978, y: 188.71948, z: 0}
+  m_LocalScale: {x: -1.694616, y: 1.694616, z: 1.694616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1397641640}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2018077589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018077587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: Weapon
+  manager: {fileID: 0}
+--- !u!1 &2026422379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2026422380}
+  - component: {fileID: 2026422381}
+  m_Layer: 0
+  m_Name: EquipmentSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2026422380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026422379}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 437.9775, y: -151.3877, z: 0}
+  m_LocalScale: {x: 1.694616, y: 1.694616, z: 1.694616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1729180122}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2026422381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026422379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: Head
+  manager: {fileID: 0}
 --- !u!1 &2081736512
 GameObject:
   m_ObjectHideFlags: 0
@@ -5420,6 +7294,7 @@ GameObject:
   - component: {fileID: 2081736516}
   - component: {fileID: 2081736515}
   - component: {fileID: 2081736514}
+  - component: {fileID: 2081736517}
   m_Layer: 5
   m_Name: Ring2IconButton
   m_TagString: Untagged
@@ -5440,6 +7315,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 841988224}
+  - {fileID: 1587411682}
   m_Father: {fileID: 1018610027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5529,6 +7405,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081736512}
   m_CullTransparentMesh: 1
+--- !u!114 &2081736517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081736512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: 
+  manager: {fileID: 0}
 --- !u!1 &2100960589
 GameObject:
   m_ObjectHideFlags: 0
@@ -5718,7 +7608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5817,6 +7707,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131556854}
   m_CullTransparentMesh: 1
+--- !u!1 &2136066518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2136066519}
+  - component: {fileID: 2136066520}
+  m_Layer: 0
+  m_Name: EquipmentSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2136066519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136066518}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 728.5572, y: 500.48444, z: 0}
+  m_LocalScale: {x: 1.694616, y: 1.694616, z: 1.694616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 694301013}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2136066520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136066518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65a889f084656429840b22bf49cfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSlot
+  slotType: Unique2
+  manager: {fileID: 0}
 --- !u!1 &2136090275
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,6 +7789,67 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &8247516676710028950
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3149423546682322433, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 524.1115
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149423546682322433, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 373.24973
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149423546682322433, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149423546682322433, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149423546682322433, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149423546682322433, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149423546682322433, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149423546682322433, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149423546682322433, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149423546682322433, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171921167298322700, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: MaxDistance
+      value: 658.7125
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166917242709818956, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
+      propertyPath: m_Name
+      value: MusicManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c3c3e11af4ded4448f0c58387f59712, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -5860,4 +7857,5 @@ SceneRoots:
   - {fileID: 865275160}
   - {fileID: 1670138657}
   - {fileID: 1856334736}
-  - {fileID: 241866959}
+  - {fileID: 8247516676710028950}
+  - {fileID: 1152183688}
